@@ -29,6 +29,6 @@ RUN chown -R www-data:www-data /var/www/html
 
 WORKDIR /var/www/html
 
-EXPOSE 8000 9000
+EXPOSE 9000
 
 CMD ["php-fpm"]

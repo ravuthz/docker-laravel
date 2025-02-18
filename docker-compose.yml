@@ -44,10 +44,10 @@ services:
     # command: php-fpm
   php-supervisor:
     container_name: laravel_php_supervisor
-    image: "ravuthz/laravel-php-supervisor:8.3"
+    image: "ravuthz/laravel-php:8.3-supervisor"
     build:
       context: .
-      dockerfile: php/Dockerfile.php-supervisor
+      dockerfile: php-supervisor/Dockerfile
     ports:
       - "8000:8000"
       - "9000:9000"
